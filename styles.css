@@ -1,0 +1,95 @@
+/*resets*/
+body, ul {
+	margin: 0;
+}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 11px;
+}
+#Calendar {
+	margin-top: 40px;
+	min-width: 721px;
+	overflow: hidden;
+
+}
+#Timebar {
+	float: left;
+	list-style: none;
+	margin-right: 8px;
+}
+#Timebar li {
+	color: #A7A7A7;
+    font-size: 9px;
+    margin: 14px 0;
+    text-align: right;
+}
+#Timebar li.checkpoint {
+	margin: 15px 0;
+}
+#Timebar li b {
+	color: #888;
+    font-size: 13px;
+    margin-right: 2px;
+}
+#EventDisplay {
+	background-color: #ececec;
+	border-left: 1px solid #d5d5d5;
+	float: left;
+	height: 720px;
+	margin-top: 23px;
+	overflow: hidden;
+	padding: 0 10px;
+	width: 600px;
+}
+#EventDisplay #EventsContainer {
+	position: relative;
+}
+#EventDisplay #EventsContainer .events {
+	background-color: #FFFFFF;
+    overflow: hidden;
+    position: absolute;
+}	
+#EventDisplay #EventsContainer .events .event-contents {
+	background-color: #fff;
+	border-color: #D5D5D5;
+    border-style: solid;
+    border-width: 1px 1px 1px 0;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	height: 100%;
+	overflow: hidden;
+	padding: 6px 8px 8px;
+}
+#EventDisplay #EventsContainer .events .event-contents h5 {
+	color: #4b6ea9;
+	font-size: 12px;
+    font-weight: 600;
+    margin: 0;
+}
+#EventDisplay #EventsContainer .events .event-contents.very.small, 
+#EventDisplay #EventsContainer .events .event-contents.super.small {
+	padding: 0 11px;
+}
+#EventDisplay #EventsContainer .events .event-contents.small h5:after {
+	content: " ...";
+}
+#EventDisplay #EventsContainer .events .event-contents.small p {
+	display: none;
+}
+#EventDisplay #EventsContainer .events .event-contents.super.small h5 {
+	display: none;
+}
+#EventDisplay #EventsContainer .events .event-contents p {
+	color: #888;
+	font-size: 9px;
+	line-height: 10px;
+	margin: 0;
+}
+#EventDisplay #EventsContainer .events .bar {
+	background-color: #4B6EA8;
+	display: block;
+	float: left;
+	height: 100%;
+	width: 4px;
+}
